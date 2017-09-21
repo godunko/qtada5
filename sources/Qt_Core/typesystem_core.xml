@@ -1,0 +1,4 @@
+<?xml version='1.0'?>
+<typesystem package='Qt5.Qt_Core'>
+  <value-type name='QRect'/>
+</typesystem>
