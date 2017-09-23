@@ -1,0 +1,12 @@
+<?xml version='1.0'?>
+<typesystem package='Qt5.Qt_Core'>
+<!--
+  <primitive-type name='bool' target-lang-api-name='Interfaces.C.Extensions.bool'/>
+  <primitive-type name='int' target-lang-api-name='Interfaces.C.int'/>
+-->
+
+  <value-type name='QRect'/>
+<!--
+  <value-type name='QRectF'/>
+-->
+</typesystem>

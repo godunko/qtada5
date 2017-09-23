@@ -1,0 +1,15 @@
+with "qtada_config";
+
+library project QtAda_QtCore is
+
+   for Languages use ("Ada", "C++");
+
+   for Source_Dirs use (QtAda_Config.Root_Source_Dir & "/sources/QtCore");
+   for Object_Dir use QtAda_Config.Root_Build_Dir & "/.objs";
+
+   for Library_Name use "QtAdaCore";
+   for Library_Kind use "relocatable";
+   for Library_Dir use QtAda_Config.Root_Build_Dir & "/lib";
+   for Library_ALI_Dir use QtAda_QtCore'Library_Dir & "/qtada";
+
+end QtAda_QtCore;

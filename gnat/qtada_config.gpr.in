@@ -1,0 +1,7 @@
+
+abstract project QtAda_Config is
+
+   Root_Source_Dir := "@PROJECT_SOURCE_DIR@";
+   Root_Build_Dir  := "@PROJECT_BINARY_DIR@";
+
+end QtAda_Config;
