@@ -14,7 +14,13 @@ set(CMAKE_CXX_FLAGS "-g")
 
 # Configure AdaSide
 
-FIND_PROGRAM(ADASIDE "adaside")
+FIND_PROGRAM(ADASIDE NAMES "adaside")
+
+if ("${ADASIDE}" STREQUAL "ADASIDE-NOTFOUND")
+    message(FATAL_ERROR "AdaSide code generator is required.")
+endif()
+
+message(STATUS "Use ${ADASIDE} to generate binding code")
 
 # Configure GNAT project files
 
@@ -26,12 +32,5 @@ FIND_PROGRAM(ADASIDE "adaside")
 #set(CXX_COMPILER_SWITCHES ${QT_INCLUDE_SWITCHES})
 configure_file(gnat/qtada_config.gpr.in gnat/qtada_config.gpr @ONLY)
 
-# Prepare project files search paths switches
+add_subdirectory(sources/QtCore)
 
-list(APPEND GPRBUILD_GRP_FLAGS "-aP${PROJECT_BINARY_DIR}/gnat")
-list(APPEND GPRBUILD_GRP_FLAGS "-aP${PROJECT_SOURCE_DIR}/gnat")
-
-# Run GPRbuild to build binding library
-
-add_custom_target(binding ALL COMMAND "gprbuild" ${GPRBUILD_GRP_FLAGS} "-p" "-Pqtada_qtcore.gpr")
-#add_dependencies(binding apiextractor)

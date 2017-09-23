@@ -4,7 +4,9 @@ library project QtAda_QtCore is
 
    for Languages use ("Ada", "C++");
 
-   for Source_Dirs use (QtAda_Config.Root_Source_Dir & "/sources/QtCore");
+   for Source_Dirs use
+    (QtAda_Config.Root_Source_Dir & "/sources/QtCore",
+     QtAda_Config.Root_Build_Dir & "/sources/QtCore");
    for Object_Dir use QtAda_Config.Root_Build_Dir & "/.objs";
 
    for Library_Name use "QtAdaCore";
