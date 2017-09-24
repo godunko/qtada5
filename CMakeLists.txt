@@ -24,8 +24,8 @@ message(STATUS "Use ${ADASIDE} to generate binding code")
 
 # Configure GNAT project files
 
-#string(REPLACE ";" "\", \"-I" QT_INCLUDE_SWITCHES "${Qt5Core_INCLUDE_DIRS}")
-#string(CONCAT QT_INCLUDE_SWITCHES "\"-I" ${QT_INCLUDE_SWITCHES} "\"")
+string(REPLACE ";" "\", \"-I" Qt5Core_INCLUDE_SWITCHES "${Qt5Core_INCLUDE_DIRS}")
+string(CONCAT Qt5Core_INCLUDE_SWITCHES "\"-I" ${Qt5Core_INCLUDE_SWITCHES} "\"")
 
 #get_target_property(Qt5Core_IMPORTED_LOCATION Qt5::Core IMPORTED_LOCATION_RELEASE)
 

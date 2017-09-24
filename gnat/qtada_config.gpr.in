@@ -4,4 +4,6 @@ abstract project QtAda_Config is
    Root_Source_Dir := "@PROJECT_SOURCE_DIR@";
    Root_Build_Dir  := "@PROJECT_BINARY_DIR@";
 
+   Qt5Core_Include_Switches := (@Qt5Core_INCLUDE_SWITCHES@);
+
 end QtAda_Config;

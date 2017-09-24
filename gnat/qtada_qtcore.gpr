@@ -14,4 +14,10 @@ library project QtAda_QtCore is
    for Library_Dir use QtAda_Config.Root_Build_Dir & "/lib";
    for Library_ALI_Dir use QtAda_QtCore'Library_Dir & "/qtada";
 
+   package Compiler is
+
+      for Switches ("C++") use QtAda_Config.Qt5Core_Include_Switches;
+
+   end Compiler;
+
 end QtAda_QtCore;
