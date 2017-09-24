@@ -27,9 +27,8 @@ message(STATUS "Use ${ADASIDE} to generate binding code")
 string(REPLACE ";" "\", \"-I" Qt5Core_INCLUDE_SWITCHES "${Qt5Core_INCLUDE_DIRS}")
 string(CONCAT Qt5Core_INCLUDE_SWITCHES "\"-I" ${Qt5Core_INCLUDE_SWITCHES} "\"")
 
-#get_target_property(Qt5Core_IMPORTED_LOCATION Qt5::Core IMPORTED_LOCATION_RELEASE)
+get_target_property(Qt5Core_IMPORTED_LOCATION Qt5::Core IMPORTED_LOCATION_RELEASE)
 
-#set(CXX_COMPILER_SWITCHES ${QT_INCLUDE_SWITCHES})
 configure_file(gnat/qtada_config.gpr.in gnat/qtada_config.gpr @ONLY)
 
 add_subdirectory(sources/QtCore)

@@ -13,6 +13,7 @@ library project QtAda_QtCore is
    for Library_Kind use "relocatable";
    for Library_Dir use QtAda_Config.Root_Build_Dir & "/lib";
    for Library_ALI_Dir use QtAda_QtCore'Library_Dir & "/qtada";
+   for Library_Options use (QtAda_Config.Qt5Core_Imported_Location);
 
    package Compiler is
 
