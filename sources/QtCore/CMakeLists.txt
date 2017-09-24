@@ -7,9 +7,9 @@ ENDFOREACH(d)
 
 add_custom_target(gen_qtcore ALL COMMAND "${ADASIDE}"
                   "global.h"
-                  "${CMAKE_SOURCE_DIR}/sources/QtCore/typesystem_core.xml"
-                  --output-directory=${CMAKE_BUILD_DIR}/sources/QtCore
-                  -I${CMAKE_SOURCE_DIR}/sources/QtCore
+                  "${PROJECT_SOURCE_DIR}/sources/QtCore/typesystem_core.xml"
+                  "--output-directory=${PROJECT_BINARY_DIR}/sources/QtCore"
+                  -I${PROJECT_SOURCE_DIR}/sources/QtCore
                   ${QT_ADASIDE_INCLUDE_SWITCHES})
 
 # Prepare project files search paths switches
