@@ -16,7 +16,8 @@ library project QtAda_QtCore is
 
    package Compiler is
 
-      for Switches ("C++") use QtAda_Config.Qt5Core_Include_Switches;
+      for Switches ("Ada") use ("-g");
+      for Switches ("C++") use ("-g") & QtAda_Config.Qt5Core_Include_Switches;
 
    end Compiler;
 
