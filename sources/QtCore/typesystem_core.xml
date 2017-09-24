@@ -5,6 +5,9 @@
   <primitive-type name='int' target-lang-api-name='Interfaces.C.int'/>
 -->
 
+  <rejection class='*' function-name='operator!='/>
+  <!-- '!=' operator can't be mapped to Ada's operators, thus ignore them  -->
+
   <value-type name='QRect'/>
 <!--
   <value-type name='QRectF'/>
