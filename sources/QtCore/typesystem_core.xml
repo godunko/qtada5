@@ -8,6 +8,15 @@
   <rejection class='*' function-name='operator!='/>
   <!-- '!=' operator can't be mapped to Ada's operators, thus ignore them  -->
 
+<!--
+  <rejection class='*' function-name='operator+='/>
+  <rejection class='*' function-name='operator-='/>
+  <rejection class='*' function-name='operator&amp;='/>
+  <rejection class='*' function-name='operator|='/>
+-->
+  <!--  modify in place is not supported by Ada  -->
+
+  <value-type name='QPoint'/>
   <value-type name='QRect'/>
 <!--
   <value-type name='QRectF'/>
@@ -179,7 +188,6 @@ QMargins
 QMarginsF
 QMessageAuthenticationCode
 QPair
-QPoint
 QPointF
 QQueue
 QRegExp
