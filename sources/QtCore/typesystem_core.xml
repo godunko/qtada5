@@ -2,8 +2,8 @@
 <typesystem package='Qt5.Qt_Core'>
 <!--
   <primitive-type name='bool' target-lang-api-name='Interfaces.C.Extensions.bool'/>
-  <primitive-type name='int' target-lang-api-name='Interfaces.C.int'/>
 -->
+  <primitive-type name='int' target-lang-name='Qt5.int'/>
 
   <rejection class='*' function-name='operator!='/>
   <!-- '!=' operator can't be mapped to Ada's operators, thus ignore them  -->
