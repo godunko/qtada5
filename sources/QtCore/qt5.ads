@@ -8,4 +8,6 @@ package Qt5 is
    subtype int is Interfaces.C.int;
    subtype float is Interfaces.C.c_float;
 
+   subtype qreal is Interfaces.C.double;
+
 end Qt5;

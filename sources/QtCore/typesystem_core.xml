@@ -5,6 +5,7 @@
 -->
   <primitive-type name='int' target-lang-name='Qt5.int'/>
   <primitive-type name='float' target-lang-name='Qt5.float'/>
+  <primitive-type name='qreal' target-lang-name='Qt5.qreal'/>
 
   <rejection class='*' function-name='operator!='/>
   <!-- '!=' operator can't be mapped to Ada's operators, thus ignore them  -->
