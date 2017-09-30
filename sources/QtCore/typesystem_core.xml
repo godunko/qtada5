@@ -1,11 +1,9 @@
 <?xml version='1.0'?>
 <typesystem package='Qt5.Qt_Core'>
-<!--
-  <primitive-type name='bool' target-lang-api-name='Interfaces.C.Extensions.bool'/>
--->
-  <primitive-type name='int' target-lang-name='Qt5.int'/>
-  <primitive-type name='float' target-lang-name='Qt5.float'/>
-  <primitive-type name='qreal' target-lang-name='Qt5.qreal'/>
+  <primitive-type name='bool' target-lang-name='Boolean' target-lang-api-name='Interfaces.C.Extensions.bool'/>
+  <primitive-type name='int' target-lang-name='Qt5.int' target-lang-api-name='Qt5.int'/>
+  <primitive-type name='float' target-lang-name='Qt5.float' target-lang-api-name='Qt5.float'/>
+  <primitive-type name='qreal' target-lang-name='Qt5.qreal' target-lang-api-name='Qt5.qreal'/>
 
   <rejection class='*' function-name='operator!='/>
   <!-- '!=' operator can't be mapped to Ada's operators, thus ignore them  -->
