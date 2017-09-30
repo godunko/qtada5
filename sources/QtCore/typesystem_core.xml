@@ -3,6 +3,7 @@
   <primitive-type name='bool' target-lang-name='Boolean' target-lang-api-name='Interfaces.C.Extensions.bool'/>
   <primitive-type name='int' target-lang-name='Qt5.int' target-lang-api-name='Qt5.int'/>
   <primitive-type name='float' target-lang-name='Qt5.float' target-lang-api-name='Qt5.float'/>
+  <primitive-type name='double' target-lang-name='Qt5.double' target-lang-api-name='Qt5.double'/>
   <primitive-type name='qreal' target-lang-name='Qt5.qreal' target-lang-api-name='Qt5.qreal'/>
 
   <rejection class='*' function-name='operator!='/>
