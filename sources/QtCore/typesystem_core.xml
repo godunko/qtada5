@@ -8,15 +8,18 @@
   <rejection class='*' function-name='operator!='/>
   <!-- '!=' operator can't be mapped to Ada's operators, thus ignore them  -->
 
-<!--
   <rejection class='*' function-name='operator+='/>
   <rejection class='*' function-name='operator-='/>
+  <rejection class='*' function-name='operator*='/>
   <rejection class='*' function-name='operator&amp;='/>
   <rejection class='*' function-name='operator|='/>
--->
   <!--  modify in place is not supported by Ada  -->
 
   <value-type name='QPoint'/>
+  <rejection class='QPoint' function-name='rx'/>
+  <rejection class='QPoint' function-name='ry'/>
+  <!--  they returns int&, not nice for Ada  -->
+
   <value-type name='QRect'/>
 <!--
   <value-type name='QRectF'/>
