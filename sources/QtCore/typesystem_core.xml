@@ -13,6 +13,7 @@
   <rejection class='*' function-name='operator+='/>
   <rejection class='*' function-name='operator-='/>
   <rejection class='*' function-name='operator*='/>
+  <rejection class='*' function-name='operator/='/>
   <rejection class='*' function-name='operator&amp;='/>
   <rejection class='*' function-name='operator|='/>
   <!--  modify in place is not supported by Ada  -->
