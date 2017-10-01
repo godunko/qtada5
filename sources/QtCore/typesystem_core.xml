@@ -30,12 +30,21 @@
   <value-type name='QPointF'/>
   <rejection class='QPointF' function-name='rx'/>
   <rejection class='QPointF' function-name='ry'/>
-  <!--  they returns int&, not nice for Ada  -->
+  <!--  they returns qreal&, not nice for Ada  -->
 
   <value-type name='QRect'/>
   <value-type name='QRectF'/>
+
   <value-type name='QSize'/>
+  <rejection class='QSize' function-name='rheight'/>
+  <rejection class='QSize' function-name='rwidth'/>
+  <!--  they returns int&, not nice for Ada  -->
+
   <value-type name='QSizeF'/>
+  <rejection class='QSizeF' function-name='rheight'/>
+  <rejection class='QSizeF' function-name='rwidth'/>
+  <!--  they returns qreal&, not nice for Ada  -->
+
   <value-type name='QMargins'/>
   <value-type name='QMarginsF'/>
 
