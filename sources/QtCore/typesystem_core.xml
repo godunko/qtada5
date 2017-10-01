@@ -28,6 +28,10 @@
   <!--  they returns int&, not nice for Ada  -->
 
   <value-type name='QPointF'/>
+  <rejection class='QPointF' function-name='rx'/>
+  <rejection class='QPointF' function-name='ry'/>
+  <!--  they returns int&, not nice for Ada  -->
+
   <value-type name='QRect'/>
   <value-type name='QRectF'/>
   <value-type name='QSize'/>
