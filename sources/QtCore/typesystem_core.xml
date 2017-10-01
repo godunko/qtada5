@@ -17,15 +17,23 @@
   <rejection class='*' function-name='operator|='/>
   <!--  modify in place is not supported by Ada  -->
 
+<!--
+  <value-type name='QLine'/>
+  <value-type name='QLineF'/>
+-->
+
   <value-type name='QPoint'/>
   <rejection class='QPoint' function-name='rx'/>
   <rejection class='QPoint' function-name='ry'/>
   <!--  they returns int&, not nice for Ada  -->
 
+  <value-type name='QPointF'/>
   <value-type name='QRect'/>
-<!--
   <value-type name='QRectF'/>
--->
+  <value-type name='QSize'/>
+  <value-type name='QSizeF'/>
+  <value-type name='QMargins'/>
+  <value-type name='QMarginsF'/>
 
 <!--
 QAbstractAnimation
@@ -181,19 +189,14 @@ QTime
 QEasingCurve
 QHash
 QMultiHash
-QLine
-QLineF
 QLinkedList
 QList
 QLocale
 QMap
 QMultiMap
 QMap::key_iterator
-QMargins
-QMarginsF
 QMessageAuthenticationCode
 QPair
-QPointF
 QQueue
 QRegExp
 QRegularExpression
@@ -212,8 +215,6 @@ QSharedDataPointer
 QEnableSharedFromThis
 QSharedPointer
 QWeakPointer
-QSize
-QSizeF
 QStack
 QLatin1String
 QString
